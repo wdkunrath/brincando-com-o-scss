@@ -1,0 +1,27 @@
+@mixin pages($backgroundColor) {
+    background-color: $backgroundColor;
+    padding: 20px;
+    height: altura(100%,12%);
+}
+
+@mixin btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--fonteSize);
+  cursor: pointer;
+}
+
+@mixin only-for-mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+ 
+@include only-for-mobile() {
+ /* início @content */
+  p {
+    font-size: 150%;
+  }
+}

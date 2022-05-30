@@ -1,0 +1,4 @@
+div[data-page="rxjs"]{
+   @include pages($colorWhite); 
+   border: 7px solid $colorBorderLight;  
+}

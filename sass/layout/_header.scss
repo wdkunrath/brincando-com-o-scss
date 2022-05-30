@@ -1,0 +1,44 @@
+header{
+    background-color: var(--colorPrimary);  
+    grid-area: 1 / 1 / 6 / 2;
+    padding: 20px 0;
+    nav {
+        ul{
+            li{
+                display: block;
+                list-style-type: none;
+
+                a{
+                    color: $colorFontePrimary;
+                    font-size: var(--fonteMenu);
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        } 
+    }
+
+    .btn{
+        @include btn;
+        
+        &.btnRosa{
+            color: #f744c1; 
+            margin-left: 12px;
+            background-color: #ffbb00;          
+        }
+
+        &.btnAzul{
+            color: #5644f7;  
+            background-color: #41f759;         
+        }
+    }
+}
+
+.title{
+    background-color: var(--colorSecundary);  
+    font-size: var(--fonteTitle);
+    color: $colorFonteSecundary;
+    grid-area: 1 / 2 / 2 / 6; 
+    text-align: right;
+    padding: 20px;
+}

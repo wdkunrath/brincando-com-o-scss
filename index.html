@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/estilo.css">
+    <title>Exercicio SCSS</title>
+</head>
+<body class="theme-azul">
+    <header class="header">
+        <a class="btn btnRosa">Tema Rosa</a>
+        <a class="btn btnAzul">Tema Azul</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/javascript.html">JavaScript</a>
+                </li>
+                <li>
+                    <a href="./pages/typescript.html">TypeScript</a>
+                </li>   
+                <li>
+                    <a href="./pages/rxjs.html">RxJS</a>
+                </li>
+                <li>
+                    <a href="./pages/sass.html">SASS</a>
+                </li>
+                <li>
+                    <a href="./pages/angular.html">Angular</a>                
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <section class="title">
+        <h1>Home</h1>
+    </section>
+    <section class="body">
+        <div data-page="home">
+            <p>Esta sendo usado para treinar estrutura SASS.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Walquiria</p>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.btnRosa').click(function(){
+           $('body')
+           .removeClass('theme-azul'); 
+           $('body').addClass('theme-rosa'); 
+        });
+
+        $('.btnAzul').click(function(){
+           $('body')
+           .removeClass('theme-rosa'); 
+           $('body')
+           .addClass('theme-azul'); 
+        });
+     });
+</script>
+</html>

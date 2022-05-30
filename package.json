@@ -1,0 +1,17 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "Treino para o scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass -o dist/"
+  },
+  "author": "Walquiria Kunrath",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^8.3.29",
+    "angular": "^1.8.2",
+    "node-sass": "^6.0.1"
+  }
+}

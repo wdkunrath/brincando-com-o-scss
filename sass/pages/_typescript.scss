@@ -1,0 +1,4 @@
+div[data-page="typescript"]{
+   @include pages($colorBlack); 
+   color: $colorWhite;
+}

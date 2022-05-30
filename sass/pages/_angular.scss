@@ -1,0 +1,4 @@
+div[data-page="angular"]{
+   @include pages($colorWhite); 
+   border: 7px solid $colorBorder;
+}

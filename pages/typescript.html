@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/estilo.css">
+    <title>Exercicio SCSS</title>
+</head>
+<body class="theme-azul">
+    <header class="header">
+        <a class="btn btnRosa">Tema Rosa</a>
+        <a class="btn btnAzul">Tema Azul</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./javascript.html">JavaScript</a>
+                </li>
+                <li>
+                    <a href="./typescript.html">TypeScript</a>
+                </li>   
+                <li>
+                    <a href="./rxjs.html">RxJS</a>
+                </li>
+                <li>
+                    <a href="./sass.html">SASS</a>
+                </li>
+                <li>
+                    <a href="./angular.html">Angular</a>                
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <section class="title">
+        <h1>TypeScript</h1>
+    </section>
+    <section class="body">
+        <div data-page="typescript">
+            <p>Esta sendo usado para treinar estrutura TypeScript.</p>       
+            <p>TYPESCRIPT
+                Para configurar:
+                tsconfig.json{
+                
+                }
+                Para Rodar tsc
+                Compilador TS – 110 configurações olhar com calma
+                Tsconfig.json – pode ser criado com –init.
+                
+                
+                
+                Tipos de dados
+                14.Number
+                (6:08)Bigint (é um numero gigantesco). Ex. const numeroGigante: bigint = 50n (ES2020).
+                 16.Boolean 
+                (2:59) Qndo vi 1 ou 0 usar a classe Boolean (‘1’);
+                Qualquer parâmetro colocado será true,  exceto o numero 0, null, undefined e ‘ ‘ .
+                18.Tuple 
+                 Definição = Caso necessário armazenar com um limit e de itens e informa o tipo do armazenado. Assim armazenado a quantidade de forma a limitar o array e o tipo do dado desse array.
+                20.Enum
+                Definição: um grupo de informações que são permissões.
+                Pode ser acessado com a sintaxe de array tbm permissao[‘user’] || permissão.user
+                23.Unknown 
+                Definição = Tipo desconhecido. Uma vez atribuído um tipo de dado nele esse tipo não pode ser alterado. 
+                24.void
+                Funções de sub-rotina.*
+                25.Never
+                Literal ele nunca retorna nada nem undefined, mto usado para lançar erros.
+                Loop intermináveis tbm. Pode ser never.
+                26.Afirmação de Tipos 
+                “AS” afirma que é o tipo informado. Modo:“<tipo>”
+                Union type = União de mais de um tipo ( ‘ Aberto’ | ‘ fechado’)
+                
+                Função
+                29.Rest Parameters 
+                (9:06) – Reduce(soma)
+                .reduce(function ex: rendaTotal, ValorArray Ex: RendaAtual => rendaTotal + RendaAtual, 0)
+                (...Args) = nome Rest(https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions#par%C3%A2metros_rest)
+                
+                
+                INTERFACE
+                Definição a interface cria um padrão e nos obriga a seguir.
+                Sendo assim assinado um contrato, regras e regulamentos devem ser seguidos. 
+                Rever Array de Interface*
+                ORIENTAÇÃO A OBJETOS
+                38.Criando Metodos
+                Rest parameters ... (5:52)*
+                43.Private ECSMAS X TS
+                Private (typeScripit) X #ECSMASScript*
+                50.Implementando Interface em Uma Classe
+                OBS.: NÃO posso estender mais porém podemos, implementar mais de uma Interface para uma mesma classe separada por virgula.
+                MÓDULOS
+                Falou sobre a divisão de escopo, e sobre a importação e exportação dos itens, sendo eles métodos e classes. Foi citado que a ideia do modulo é organizar os contextos que podem existir dentro de um projeto, sendo assim módulos não são acessíveis fora do seu escopo. E para que o mesmo ocorra é necessário que ele seja exportado e importado.
+                NAMESPACE
+                Escolher módulos caso seja para utilizar na sua organização (recomendado)
+                O namespace é usado para agrupamento lógico de funcionalidades. 
+                 Não recomendado mais existe para referenciar um namespace.
+                // <reference path=”./autenticação/index.ts” />
+                MIXIN
+                Resolvendo um problema existente no TS, Como não podemos extender duas classes podemos usar está função ApplyMixin. Ela não é nativa nem do JS nem do TS.
+                •	Interface Sofa extends Produtos, moveç{}
+                Para resolver isso pode-se pegar o applyMixins
+                •	applyMixins(Sofa, [Produtos, Movel]);
+                Ele pega cada Uma das classes e “copia” as propriedades para Sofa.
+                GENERICS
+                Estrutura adaptável a vários tipos de cod. <>
+                Sendo de três estruturas : Funções, Interfaces e Classes
+                
+                 
+                
+                uma classe tem dois lados em seu tipo: o lado estático e o lado da instância. As classes genéricas são genéricas apenas em seu lado da instância, e não no lado estático, portanto, ao trabalhar com classes, os membros estáticos não podem usar o parâmetro de tipo da classe. 
+                https://www.youtube.com/watch?v=iGn5iVBk3c8
+                
+                get? Set? Usar
+                 Um dicionário é uma estrutura onde os elementos são armazenados sob uma chave. Por exemplo, podemos armazenar os dados sobre um automóvel usando como chave a placa. Para recuperar os dados do automóvel basta informar a placa (ao invés, por exemplo, da posição onde os dados foram armazenados)
+                •	Usando dois arrays, crie uma classe Dicionario onde tanto a chave como o valor tem seu tipo definido por parâmetros de tipo
+                •	Imagine que as seguintes operações devem estar disponíveis:
+                o	add(K chave, V valor) - adiciona à chave K o valor V
+                o	V get(K chave) - retorna o valor associado à chave K (se não encontrar, retorna null)
+                </p> 
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Walquiria</p>
+    </footer>
+</body><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.btnRosa').click(function(){
+           $('body')
+           .removeClass('theme-azul'); 
+           $('body').addClass('theme-rosa'); 
+        });
+
+        $('.btnAzul').click(function(){
+           $('body')
+           .removeClass('theme-rosa'); 
+           $('body')
+           .addClass('theme-azul'); 
+        });
+     });
+</script>
+</html>
